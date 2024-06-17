@@ -1,0 +1,77 @@
+# Site settings
+title: Aichara Farm
+description: Aichara Farm is dedicated to sustainable and organic farming practices.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://aicharafarm.in" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude these files and directories from the build process
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+
+# Include these files and directories in the build process
+include:
+  - _pages
+  - _posts
+  - _data
+  - assets
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name
+
+# Permalinks
+permalink: /:title/
+
+# Enable the use of GitHub Flavored Markdown (GFM)
+kramdown:
+  input: GFM
+
+# Configuration for the minima theme
+minima:
+  social_links:
+    twitter: aicharafarm
+    github: aicharafarm
+    facebook: aicharafarm
+    instagram: aicharafarm
+
+# Configuration for jekyll-feed plugin
+feed:
+  path: feed.xml
+
+# Configuration for jekyll-seo-tag plugin
+seo:
+  name: "Aichara Farm"
+  description: "Aichara Farm is dedicated to sustainable and organic farming practices."
+  url: "https://aicharafarm.github.io"
+  twitter:
+    username: aicharafarm
+  facebook:
+    admins: aicharafarm
+
+# Defaults for various file types
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

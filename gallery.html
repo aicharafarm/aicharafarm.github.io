@@ -13,6 +13,12 @@
             overflow: hidden;
             font-family: Arial, sans-serif;
         }
+        header {
+            background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent background */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
         .slider-container {
             position: relative;
             width: 100%;
@@ -84,7 +90,11 @@
     </style>
 </head>
 <body>
-    <a class="back-link" href="/">← Back to Home</a>
+    <header>
+        <div>
+            <a href="/" style="color: white; text-decoration: none; padding: 40px;">Back to Home</a>
+        </div>
+    </header>
     <div class="slider-container">
         <div class="slides">
             <div class="slide">
