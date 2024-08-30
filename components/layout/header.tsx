@@ -16,7 +16,7 @@ const Header = (): ReactElement => {
         />
         <h1 className="text-xl sm:text-2xl font-bold">Aichara Farm</h1>
       </div>
-      <nav className="hidden sm:flex items-center gap-2 sm:gap-4">
+      <nav className="flex items-center gap-2 sm:gap-4">
         <Link href="/#" className="hover:underline" prefetch={false}>
           Home
         </Link>
